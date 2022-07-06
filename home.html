@@ -1,0 +1,79 @@
+<!-- Create a simple Program to build the Calculator in JavaScript using with HTML and CSS web languages. -->
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title> JavaScript Calculator </title>
+<link rel="stylesheet" href="style.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset=utf-8>
+</head>
+
+
+
+<body>
+
+<h1> Calculator </h1>
+<div class="formS">
+<form name = "main_form">
+	
+	<!-- This input box shows the button pressed by the user in calculator. -->
+  <input id = "calc" type ="text" name = "answer" > <br> <br>
+  <!-- Display the calculator button on the screen. -->
+  <!-- onclick() function display the number pressed by the user. -->
+  <input class=btn type = "button" value = "1" onclick = "main_form.answer.value += '1' ">
+  <input  class=btn type = "button" value = "2" onclick = "main_form.answer.value += '2' ">
+  <input class=btn type = "button" value = "3" onclick = "main_form.answer.value += '3' ">
+   <input class=btn type ="button" value = "+" onclick = "main_form.answer.value += '+' ">
+  
+  <br> 
+  
+  <input class=btn type = "button" value = "4" onclick = "main_form.answer.value += '4' ">
+  <input class=btn type = "button" value = "5" onclick = "main_form.answer.value += '5' ">
+  <input class=btn type = "button" value = "6" onclick = "main_form.answer.value += '6' ">
+  <input class=btn type = "button" value = "-" onclick = "main_form.answer.value += '-' ">
+  <input class=btn type ="button" value = "EXP" onclick = expovalue()>
+
+  <script>
+    function expovalue()  
+    {
+  var a = main_form.answer.value;
+  var b = (prompt("Please,type the exponent.Your answer will appear here"));
+  //b = parseInt(b);
+  
+var expoanswer=Math.pow(a,b); 
+alert(expoanswer);
+
+document.getElementById("calc").innerHTML= expoanswer;
+
+}
+</script>
+
+
+  
+  
+   <input class=btn type = "button" value = "7" onclick = "main_form.answer.value += '7' ">
+  <input class=btn type = "button" value = "8" onclick = "main_form.answer.value += '8' ">
+  <input class=btn type = "button" value = "9" onclick = "main_form.answer.value += '9' ">
+  <input class=btn type = "button" value = "*" onclick = "main_form.answer.value += '*' ">
+  <input class=btn type ="button" value = "√" onclick = "main_form.answer.value = Math.sqrt(main_form.answer.value) ">
+  <br> 
+  
+  
+  <input class=btn type = "button" value = "/" onclick = "main_form.answer.value += '/' ">
+  <input class=btn type = "button" value = "0" onclick = "main_form.answer.value += '0' ">
+    <input class=btn type = "button" value = "." onclick = "main_form.answer.value += '.' ">
+     <!-- When we click on the '=' button, the onclick() shows the results on the calculator screen. -->
+  <input class=btn type = "button" value = "=" onclick = "main_form.answer.value = eval(main_form.answer.value) ">
+  <!-- Display the Cancel button and erase all data entered by the user. -->
+  <input class=btn type = "button" value = "C" onclick = "main_form.answer.value = ' ' "id= "clear" >
+  <br> 
+   
+</form>
+</div>
+</body>
+</html>
+	
+  
+
+
+
