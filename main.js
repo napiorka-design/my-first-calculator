@@ -1,4 +1,4 @@
-  <script>
+
     function expovalue()  
     {
   var a = main_form.answer.value;
@@ -11,4 +11,4 @@ alert(expoanswer);
 document.getElementById("calc").innerHTML= expoanswer;
 
 }
-</script>
+
