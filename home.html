@@ -6,13 +6,14 @@
 <link rel="stylesheet" href="style.css"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset=utf-8>
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 
 
 
 <body>
 
-<h1> Calculator </h1>
+<h1> Calculator Program in JavaScript </h1>
 <div class="formS">
 <form name = "main_form">
 	
@@ -33,12 +34,25 @@
   <input class=btn type = "button" value = "-" onclick = "main_form.answer.value += '-' ">
   <input class=btn type ="button" value = "EXP" onclick = expovalue()>
 
- 
+  <script>
+    function expovalue()  
+    {
+  var a = main_form.answer.value;
+  var b = (prompt("Please,type the exponent.Your answer will appear here"));
+  //b = parseInt(b);
+  
+var expoanswer=Math.pow(a,b); 
+alert(expoanswer);
+
+document.getElementById("calc").innerHTML= expoanswer;
+
+}
+</script>
 
 
   
   
-  <input class=btn type = "button" value = "7" onclick = "main_form.answer.value += '7' ">
+   <input class=btn type = "button" value = "7" onclick = "main_form.answer.value += '7' ">
   <input class=btn type = "button" value = "8" onclick = "main_form.answer.value += '8' ">
   <input class=btn type = "button" value = "9" onclick = "main_form.answer.value += '9' ">
   <input class=btn type = "button" value = "*" onclick = "main_form.answer.value += '*' ">
@@ -52,12 +66,11 @@
      <!-- When we click on the '=' button, the onclick() shows the results on the calculator screen. -->
   <input class=btn type = "button" value = "=" onclick = "main_form.answer.value = eval(main_form.answer.value) ">
   <!-- Display the Cancel button and erase all data entered by the user. -->
-  <input class=btn type = "button" value = "C" onclick = "main_form.answer.value = ' ' " id = "clear" >
+  <input class=btn type = "button" value = "C" onclick = "main_form.answer.value = ' ' " id= "clear" >
   <br> 
    
 </form>
 </div>
-	<script src="main.js"></script>
 </body>
 </html>
 	
