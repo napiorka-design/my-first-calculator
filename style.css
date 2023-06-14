@@ -10,7 +10,7 @@ h1 {
 	}
 
 #clear{
-	background-color: rgb(255, 102, 0);
+	background-color: rgb(255, 0, 238);
 }
 
 .formS
@@ -62,7 +62,7 @@ border: 5px solid black;
 	text-decoration: none;
 	outline: none;
 	color: #fff;
-	background-color: #4CAF50;
+	background-color: #5792f1;
 	border: none;
 	border-radius: 15px;
 	box-shadow: 0 9px #999;
@@ -71,7 +71,7 @@ border: 5px solid black;
   .btn:hover {background-color: #3e8e41}
   
   .btn:active {
-	background-color: #3e8e41;
+	background-color: #3e778e;
 	box-shadow: 0 5px #666;
 	transform: translateY(4px);
   }
